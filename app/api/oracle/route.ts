@@ -14,8 +14,10 @@ export const runtime = "nodejs";
 // خودکار سراغ مدل بعدی می‌رود تا بار کلاس پخش شود.
 const OPENROUTER_MODELS: string[] = [
   process.env.OPENROUTER_MODEL || "google/gemma-4-31b-it:free",
-  "moonshotai/kimi-k2.6:free",
+  "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "nvidia/nemotron-3-super-120b-a12b:free",
   "google/gemma-4-26b-a4b-it:free",
+  "dots-studio/dots-3-note-preview:free",
 ].filter((m, i, a) => Boolean(m) && a.indexOf(m) === i);
 
 const SYSTEM_PROMPT =
