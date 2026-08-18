@@ -62,7 +62,7 @@ export default function LayerShell({ layerId, children }: Props) {
                   {layer.title}
                 </h2>
                 <p className="text-xs text-white/50">
-                  لایه {toFa(layerId)} از ۵ · {layer.concept}
+                  لایه {toFa(layerId)} از ۶ · {layer.concept}
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function LayerShell({ layerId, children }: Props) {
               orbSize={110}
             />
             <p className="mt-3 text-center text-sm text-white/40">
-              {layerId < 5 ? "آماده‌ی فرورفتن به لایه‌ی بعد..." : "آخرین فرمان..."}
+              {layerId < 6 ? "آماده‌ی فرورفتن به لایه‌ی بعد..." : "آخرین فرمان..."}
             </p>
           </motion.div>
         )}

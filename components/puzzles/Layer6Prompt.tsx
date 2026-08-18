@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { layer5Goal } from "@/lib/puzzles";
+import { layer6Goal } from "@/lib/puzzles";
 import { toFa } from "@/lib/scoring";
 import { playSfx } from "@/lib/audio";
 
@@ -13,7 +13,7 @@ interface OracleResult {
   mode: "live" | "offline";
 }
 
-export default function Layer5Prompt({ onSolved }: { onSolved: () => void }) {
+export default function Layer6Prompt({ onSolved }: { onSolved: () => void }) {
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<OracleResult | null>(null);
@@ -57,9 +57,9 @@ export default function Layer5Prompt({ onSolved }: { onSolved: () => void }) {
       <div className="mb-5 rounded-xl border border-amberGlow/30 bg-amberGlow/5 p-4">
         <div className="mb-1 text-sm font-bold text-amberGlow">هدف نهایی</div>
         <p className="text-sm leading-7 text-white/80">
-          پرامپتی بنویس که هاتف را وادار کند یک <b>شعر فارسی درباره‌ی «{layer5Goal.topic}»</b> بسازد،
-          به‌گونه‌ای که <b>حرف اول هر مصرع، کنار هم، واژه‌ی «{layer5Goal.acrostic}»</b> را بسازد
-          (آکروستیک: {Array.from(layer5Goal.acrostic).join(" ، ")}).
+          پرامپتی بنویس که هاتف را وادار کند یک <b>شعر فارسی درباره‌ی «{layer6Goal.topic}»</b> بسازد،
+          به‌گونه‌ای که <b>حرف اول هر مصرع، کنار هم، واژه‌ی «{layer6Goal.acrostic}»</b> را بسازد
+          (آکروستیک: {Array.from(layer6Goal.acrostic).join(" ، ")}).
         </p>
       </div>
 

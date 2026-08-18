@@ -5,14 +5,14 @@ import { useGame } from "@/lib/store";
 import { toFa } from "@/lib/scoring";
 import type { LayerId } from "@/lib/puzzles";
 
-// نمایش پیشرفت: پنج قفل که با حل هر لایه باز می‌شوند.
+// نمایش پیشرفت: شش قفل که با حل هر لایه باز می‌شوند.
 export default function ProgressLocks() {
   const solved = useGame((s) => s.solvedLayers);
   const current = useGame((s) => s.currentLayer);
 
   return (
     <div className="flex items-center gap-1.5" aria-label="پیشرفت کلیدها">
-      {([1, 2, 3, 4, 5] as LayerId[]).map((id) => {
+      {([1, 2, 3, 4, 5, 6] as LayerId[]).map((id) => {
         const isSolved = solved.includes(id);
         const isCurrent = id === current && !isSolved;
         return (

@@ -14,7 +14,8 @@ import Layer1Tokenize from "@/components/puzzles/Layer1Tokenize";
 import Layer2Embedding from "@/components/puzzles/Layer2Embedding";
 import Layer3Attention from "@/components/puzzles/Layer3Attention";
 import Layer4Generation from "@/components/puzzles/Layer4Generation";
-import Layer5Prompt from "@/components/puzzles/Layer5Prompt";
+import Layer5Retrieval from "@/components/puzzles/Layer5Retrieval";
+import Layer6Prompt from "@/components/puzzles/Layer6Prompt";
 
 export default function GamePage() {
   const router = useRouter();
@@ -79,7 +80,12 @@ export default function GamePage() {
           )}
           {currentLayer === 5 && (
             <LayerShell layerId={5}>
-              {(onSolved) => <Layer5Prompt onSolved={onSolved} />}
+              {(onSolved) => <Layer5Retrieval onSolved={onSolved} />}
+            </LayerShell>
+          )}
+          {currentLayer === 6 && (
+            <LayerShell layerId={6}>
+              {(onSolved) => <Layer6Prompt onSolved={onSolved} />}
             </LayerShell>
           )}
         </motion.div>

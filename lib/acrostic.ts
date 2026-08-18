@@ -1,5 +1,5 @@
 // منطق مشترک بررسی آکروستیک «رها» برای لایه ۵.
-import { layer5Goal } from "./puzzles";
+import { layer6Goal } from "./puzzles";
 
 // نرمال‌سازی حرف اول: حذف اعراب و یکسان‌سازی انواع الف
 function normalizeFirstLetter(ch: string): string {
@@ -30,7 +30,7 @@ export interface AcrosticCheck {
 
 // بررسی اینکه خروجی مدل شرط آکروستیک «رها» را دارد
 export function checkAcrostic(text: string): AcrosticCheck {
-  const target = Array.from(layer5Goal.acrostic); // ر، ه، ا
+  const target = Array.from(layer6Goal.acrostic); // ر، ه، ا
   const lines = text
     .split("\n")
     .map((l) => l.trim())

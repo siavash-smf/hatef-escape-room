@@ -74,7 +74,7 @@ export const useGame = create<GameState>()(
         const nextSolved = solvedLayers.includes(id)
           ? solvedLayers
           : [...solvedLayers, id];
-        if (id >= 5) {
+        if (id >= 6) {
           set({
             solvedLayers: nextSolved,
             phase: "win",
@@ -109,6 +109,9 @@ export const useGame = create<GameState>()(
     }),
     {
       name: "hatef-escape-room",
+      // نسخه ۲: افزوده‌شدن لایه‌ی ششم — وضعیتِ ذخیره‌شده‌ی نسخه‌ی قبلی معتبر نیست
+      version: 2,
+      migrate: () => ({ ...initial }) as GameState,
       partialize: (s) => ({
         phase: s.phase,
         currentLayer: s.currentLayer,

@@ -5,7 +5,7 @@ import {
   fallbackPoem,
   promptCoversRequirements,
 } from "@/lib/acrostic";
-import { layer5Goal } from "@/lib/puzzles";
+import { layer6Goal } from "@/lib/puzzles";
 
 export const runtime = "nodejs";
 
@@ -93,7 +93,7 @@ function judge(output: string): OracleResponse {
     message: check.ok
       ? "هاتف دقیقاً همان چیزی را که خواستی تولید کرد. درها باز می‌شوند..."
       : check.reason ??
-        `خروجی شرط آکروستیک «${layer5Goal.acrostic}» را برآورده نکرد. پرامپتت را دقیق‌تر کن.`,
+        `خروجی شرط آکروستیک «${layer6Goal.acrostic}» را برآورده نکرد. پرامپتت را دقیق‌تر کن.`,
     mode: "live",
   };
 }

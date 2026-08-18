@@ -46,7 +46,7 @@ export default function Lose() {
         </p>
 
         <div className="panel mt-8 px-6 py-4 text-sm text-white/60">
-          پیش از قفل شدن اتاق، {toFa(solvedLayers.length)} لایه از ۵ لایه را گشوده
+          پیش از قفل شدن اتاق، {toFa(solvedLayers.length)} لایه از ۶ لایه را گشوده
           بودی.
         </div>
 

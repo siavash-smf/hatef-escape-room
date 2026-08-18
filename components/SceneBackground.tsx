@@ -14,6 +14,8 @@ const GRADIENTS: Record<string, string> = {
   "layer-4":
     "radial-gradient(circle at 50% 100%, #0d2436 0%, #070d22 55%, #04060f 100%)",
   "layer-5":
+    "linear-gradient(160deg, #04060f 0%, #0a1a34 45%, #16243f 100%)",
+  "layer-6":
     "radial-gradient(circle at 50% 50%, #143042 0%, #0a1228 50%, #04060f 100%)",
   win: "radial-gradient(circle at 50% 40%, #0e3a44 0%, #0a2030 50%, #04060f 100%)",
   lose: "radial-gradient(circle at 50% 40%, #3a0e16 0%, #1a0810 50%, #04060f 100%)",
